@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!-- reference your copy Font Awesome here (from our CDN or by hosting yourself) -->
+
+        <link href="fontawesome/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="{{url_for('static',filename='css/style.css'}}">
+        <title>MonCV</title>
+    </head>
+    <body>
+        <div class="container-fluid" >
+            <div class="row">
+                <div class="container-fluid col-md-4 " style="background-color:darksalmon ">
+                    <div class="dropdown pt-5" style="width:auto" data-display="static">
+					<center><p><h2><b>Curriculum Vitae</b></h2></p></center>
+                        <center><div class="row mx-5" style="text-align: center">
+                            <img src="{{url_for('static',filename='img/profile.jpeg'}}" alt="photo profil" class=" img-fluid rounded-circle" id="image"  ></img>
+                        </div></center>
+
+                        <h2 class="dropdown-item-text mt-5 " style="text-align: center" ><b>NOUNDOU NJIKE Thierry</b></h2>
+                        <div class="dropdown-divider"></div>
+                        <h2><a class="dropdown-item" style="text-align: center" href="#1">Coordonnées</a></h2>
+                        <div class="dropdown-divider"></div>
+                        <h2><a class="dropdown-item" style="text-align: center" href="#2">Profil</a></h2>
+                        <div class="dropdown-divider"></div>
+                        <h2><a class="dropdown-item" style="text-align: center" href="#3">Formations</a></h2>
+                        <div class="dropdown-divider"></div>
+                        <h2><a class="dropdown-item" style="text-align: center" href="#4">Expériences</a></h2>
+                        <div class="dropdown-divider"></div>
+                        <h2><a class="dropdown-item" style="text-align: center" href="#5">Compétences <br>techniques</a></h2>
+                        <div class="dropdown-divider"></div>
+                        <h2><a class="dropdown-item" style="text-align: center" href="#6">Hobbies et <br>centres d’intérêt</a></h2>
+                    </div>
+                </div>
+
+                <div class="container-fluid col-md-8">
+                    <div class="card bg-secondary mt-3 mb-3 " style="width:auto " id=1>
+                        <div class="card-body">
+                            <h1 class="card-title"> <i class="fas fa-thumbtack"></i> Coordonnées</h1>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Né à Douala (Cameroun), le BirthDate<br>
+                                    Rue de houdain 9, 7000 Mons<br>
+                                    Gsm : 000 00 00 00<br>
+                                    E-mail : student@example.com<br>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary mb-3 " style="width:auto" id=2>
+                        <div class="card-body">
+                            <h1 class="card-title"> <i class="fas fa-user"></i> Profil</h1>
+                            <ul class="list-group">
+                                <li class="list-group-item">Bonne endurance et concentration, réflexes et dextérité
+développés<br>Elaborer des stratégies, reproduire, mémoriser<br>Facilité à travailler sous
+pression et en équipe, sens de l’organisation, de l’observation<br>Sens des responsabilités, de l’adaptation
+et la communication</li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="card bg-secondary mb-3" style="width:auto" id=3>
+                        <div class="card-body">
+                            <h1 class="card-title"> <i class="fas fa-user-graduate"></i> Formations </h1>
+                            <ul class="list-group">
+                                <li class="list-group-item"><b>2006-2013</b> : Études Secondaires en Mathématiques et sciences physiques (Douala, Cameroun)</li>
+                                <li class="list-group-item"><b>2013-2016</b> : Etudes universitaires en Informatique Fondamentale (Douala, Cameroun)</li>
+                                <li class="list-group-item"><b>2016-2017</b> : Études Secondaires supérieures Maths-Sciences (Belgique)</li>
+                                <li class="list-group-item"><b>2017-	</b> : Études Universitaires à la Faculté Polytechnique de Mons en Informatique et Gestion</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary mb-3" style="width:auto" id=4>
+                        <div class="card-body">
+                            <h1 class="card-title"> <i class="fas fa-toolbox"></i> Expériences</h1>
+                            <ul class="list-group">
+                                <li class="list-group-item">- Participation à des projets Flutter et developpement web<br>
+								- Formation Google Cloud Platform<br>
+								- Préparateur de commandes chez Newrest Servair Gosselies<br>
+                                    
+                                    - Etudiant à la loterie nationale<br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary mb-3" style="width:auto" id=5>
+                        <div class="card-body">
+                            <h1 class="card-title"> <i class="fas fa-tools"></i> Compétences techniques</h1>
+                            <ul class="list-group">
+                                <li class="list-group-item"> <b>Langues: </b><hr>
+                                    Français : langue maternelle<br>
+                                    Anglais : moyen <br>
+                                    Néerlandais : notions de base <br> 
+
+                                </li>
+                                <li class="list-group-item"><b>Logiciels et languages Informatiques:</b><hr>
+                                    <b>Traitement</b>: Ms office,Latex <br>
+                                    <b>Base de données</b>: Mysql, SQLite, Oracle, Visual Basic <br>
+                                    <b>Programmation</b>: Dart, Python, C, C++, JAVA, HTML, CSS, Php, Haskell<br>
+									<b>Frameworks</b>: TensorFlow, Pytorch, Flask, Flutter, React Native, Bootstrap</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card bg-secondary mb-3" style="width:auto" id=6>
+                        <div class="card-body">
+                            <h1 class="card-title"> <i class="fas fa-gamepad"></i>Hobbies et centres d’intérêt</h1>
+                            <ul class="list-group">
+                                <li class="list-group-item">- Culture générale, Cinéma et la lecture<br>
+                                    - Sports: football, Jeux de strategie<br>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </body>
+</html>
